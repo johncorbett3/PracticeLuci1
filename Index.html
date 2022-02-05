@@ -17,12 +17,14 @@
   <!-- Form consisting of text submission and button to print to console -->
   <form class="pure-form">
     <input id="name" type="text" placeholder="Enter Name" />
+    <input id="password" type="text" placeholder="Enter Password" />
     <button type="submit"><i class="fa fa-chevron-circle-right"></i></button>
 </form> 
 
 <script>
     
     var nameInput = document.getElementById('name');
+    var pwInput = document.getElementById('password');
 
     document.querySelector('form.pure-form').addEventListener('submit', function (e) {
 
@@ -30,6 +32,7 @@
     e.preventDefault();
 
     console.log(nameInput.value);    
+    console.log(pwInput.value);
 });
 
 </script>
