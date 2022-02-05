@@ -39,6 +39,17 @@
         const db = getFirestore(app);
       </script>
 
+      <!-- Trying to send to Firebase; hide this for now -->
+      <!-- <script type="module">
+          import { collection, addDoc } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js"; 
+
+            // Add a new document with a generated id.
+            const docRef = await addDoc(collection(db, "cities"), {
+            name: "Tokyo",
+            country: "Japan"
+            });
+            console.log("Document written with ID: ", docRef.id);
+      </script> -->
 
 <!-- Very basic title -->
     Luci
@@ -46,7 +57,7 @@
   <form class="pure-form">
     <input id="name" type="text" placeholder="Enter Name" />
     <input id="password" type="text" placeholder="Enter Password" />
-    <button type="submit" onclick="testFunction()"></button>
+    <button type="submit" onclick="testFunction(); submitToFirebase()"></button>
 </form> 
 
 
