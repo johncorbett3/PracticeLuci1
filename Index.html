@@ -11,7 +11,36 @@
 
 <body>
 
-  <!-- Very basic title -->
+    <!-- Connecting to Firebase -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics.js";
+        // Had to add the below one manually for Firestore
+        import { getFirestore } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAZKytcayPyHt4wEBp8JOfTWL9s4g-2YI0",
+          authDomain: "practiceluci.firebaseapp.com",
+          projectId: "practiceluci",
+          storageBucket: "practiceluci.appspot.com",
+          messagingSenderId: "388284793688",
+          appId: "1:388284793688:web:038b91cbf24cd14ec75b2d",
+          measurementId: "G-TN4WV76SJ3"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const db = getFirestore(app);
+      </script>
+
+
+<!-- Very basic title -->
     Luci
   <!-- Form consisting of text submission and button to print to console -->
   <form class="pure-form">
@@ -19,6 +48,7 @@
     <input id="password" type="text" placeholder="Enter Password" />
     <button type="submit" onclick="testFunction()"></button>
 </form> 
+
 
 
 </body>
