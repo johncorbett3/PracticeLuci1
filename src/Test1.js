@@ -1,3 +1,18 @@
+import { initializeApp } from 'firebase/app';
+
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    apiKey: "AIzaSyAZKytcayPyHt4wEBp8JOfTWL9s4g-2YI0",
+    authDomain: "practiceluci.firebaseapp.com",
+    projectId: "practiceluci",
+    storageBucket: "practiceluci.appspot.com",
+    messagingSenderId: "388284793688",
+    appId: "1:388284793688:web:038b91cbf24cd14ec75b2d",
+    measurementId: "G-TN4WV76SJ3"
+  };
+
+  const app = initializeApp(firebaseConfig);
+
 
 // This grabs the input from the text boxes and prints them to console
 function testFunction() {

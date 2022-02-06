@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "firebase": "^9.6.6"
+  },
+  "name": "practiceluci1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johncorbett3/PracticeLuci1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johncorbett3/PracticeLuci1/issues"
+  },
+  "homepage": "https://github.com/johncorbett3/PracticeLuci1#readme",
+  "description": ""
+}
